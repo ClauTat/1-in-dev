@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible & SEO-friendly Sample Page</title>
+  <meta name="description" content="A simple HTML5 page demonstrating semantic structure, accessibility best practices, and basic SEO principles for an introductory assignment.">
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic HTML, screen readers">
+  <!-- Open Graph (basic) -->
+  <meta property="og:title" content="Accessible & SEO-friendly Sample Page">
+  <meta property="og:description" content="Semantic HTML5 example focused on accessibility and SEO fundamentals.">
+  <meta property="og:type" content="website">
+  <!-- canonical (replace with real URL when available) -->
+  <link rel="canonical" href="https://example.com/">
+</head>
+<body>
+  <!-- Skip link for keyboard users / screen reader users -->
+
+  <header role="banner">
+    <div>
+      <h1>City Library — Accessibility & SEO Demo</h1>
+      <p lang="en">A short demo page showing semantic structure, accessible landmarks, and SEO-friendly metadata.</p>
+    </div>
+
+    <nav role="navigation" aria-label="Primary site navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <article aria-labelledby="page-intro">
+      <header>
+        <h2 id="page-intro">Welcome to the City Library</h2>
+        <p>This article introduces our library's services and highlights how this page is built for both people and search engines.</p>
+      </header>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h3 id="about-heading">About the Library</h3>
+        <p>The City Library provides free access to books, digital resources, and community programs. Our mission is to make knowledge and culture available to everyone.</p>
+        <ul>
+          <li>Open to all ages</li>
+          <li>Free membership</li>
+          <li>Accessible facilities and resources</li>
+        </ul>
+      </section>
+
+      <section id="collections" aria-labelledby="collections-heading">
+        <h3 id="collections-heading">Collections</h3>
+        <p>We offer a variety of collections tailored to different interests and needs. Below are featured categories:</p>
+        <ol>
+          <li><strong>Children & Young Adult</strong> — books, audiobooks, and early literacy programs.</li>
+          <li><strong>Research & Reference</strong> — journals, databases, and local history archives.</li>
+          <li><strong>Digital Media</strong> — e-books, streaming music, and educational videos.</li>
+        </ol>
+
+        <figure>
+          <img src="https://via.placeholder.com/600x200.png?text=Library+Interior" alt="Interior view of the City Library reading area" width="600" height="200">
+          <figcaption>Reading area with natural light and accessible seating.</figcaption>
+        </figure>
+      </section>
+
+      <section id="events" aria-labelledby="events-heading">
+        <h3 id="events-heading">Events & Programs</h3>
+        <p>Regular events include storytime, digital skills workshops, and community talks. Visit the events page or contact us to learn more.</p>
+
+        <ul>
+          <li><time datetime="2025-09-05">September 5, 2025</time> — Digital skills workshop</li>
+          <li><time datetime="2025-10-12">October 12, 2025</time> — Local authors panel</li>
+        </ul>
+      </section>
+
+      <aside aria-labelledby="support-heading" role="complementary">
+        <h4 id="support-heading">Support & Accessibility</h4>
+        <p>We provide large-print materials, assistive technology stations, and staff trained to assist visitors with diverse needs.</p>
+        <p><a href="#contact">Request accessibility support</a> or call <a href="tel:+1234567890">+1 (234) 567‑890</a>.</p>
+      </aside>
+    </article>
+  </main>
+
+  <footer role="contentinfo">
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <address>
+        City Library<br>
+        123 Knowledge Ave.<br>
+        Booktown, BK 00000<br>
+        Email: <a href="mailto:info@citylibrary.example">info@citylibrary.example</a>
+      </address>
+    </section>
+
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Accessibility Statement</a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; <time datetime="2025">2025</time> City Library. All rights reserved.</p>
+  </footer>
+
+  <!-- Helpful ARIA / accessibility notes (visible to developers, not users):
+       - Landmarks: header, nav, main, aside, footer
+       - Skip link included to allow keyboard users to bypass navigation
+       - Descriptive link text and alt attribute for images
+       - Use of time/datetime for machine-readable dates
+       - Proper heading order: h1 &rarr; h2 &rarr; h3... -->
+</body>
+</html>
