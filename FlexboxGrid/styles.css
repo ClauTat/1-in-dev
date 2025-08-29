@@ -1,0 +1,148 @@
+/* ---------------------------
+   Global Styles
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------------------------
+   Header + Navigation
+---------------------------- */
+.site-header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+.site-header h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------
+   Hero Section
+---------------------------- */
+.hero {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+/* ---------------------------
+   Services Grid
+---------------------------- */
+.services {
+  padding: 2rem;
+  background: #eaf2f8;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border: 2px solid #ccc;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ---------------------------
+   Flexbox Section
+---------------------------- */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.flex-item {
+  background: #ddd;
+  padding: 1rem;
+  flex: 1;
+  margin: 0.5rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ---------------------------
+   Footer
+---------------------------- */
+.site-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ---------------------------
+   Media Queries
+---------------------------- */
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
